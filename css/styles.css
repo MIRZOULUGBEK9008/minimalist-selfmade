@@ -1,9 +1,77 @@
 /* CUSTOM-PROPS */
 :root {
 
+  /* PRIMARY  */
+  --slightly-desaturated-cyan: #5FB4A2;
+  --dark-blue: #203A4C;
+  --grayish-dark-blue: #33323D;
+
+  /* SECONDRY  */
+  --very-light-grey-bg: #fafafa;
+  --light-grey-text-field: #eaeaeb;
+  --bright-red-errors: #F43030;
+
+  /* FONTS  */
+  --title-font: "Public Sans", "Arial", sans-serif;
+  --text-font: "Ibarra Real Nova", "Arial", sans-serif;
 }
 
+
 /* FONT-FACE  */
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Bold.woff2") format("woff2"),
+  url("../fonts/PublicSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-BoldItalic.woff2") format("woff2"),
+  url("../fonts/PublicSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Regular.woff2") format("woff2"),
+  url("../fonts/IbarraRealNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
+  url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Thin.woff2") format("woff2"),
+  url("../fonts/PublicSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
+  url("../fonts/IbarraRealNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 /* GLOBAL-STYLES  */
@@ -23,11 +91,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  background-color: var(--very-light-grey-bg);
+  color: var(--grayish-dark-blue);
+  font-family: var(--text-font);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 30px;
   padding: 0;
   margin: 0;
 }
@@ -39,16 +107,16 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 3px dashed var(black);
+  outline: 3px dashed var(--grayish-dark-blue);
   outline-offset: 3px;
 }
 
 /* CONTAINER  */
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
