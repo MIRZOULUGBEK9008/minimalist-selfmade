@@ -134,6 +134,34 @@ img {
 }
 
 
+/* BUTTON  */
+.button {
+  display: inline-block;
+  padding: 17px 34px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--grayish-dark-blue);
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 2px;
+  border: 1px solid var(--grayish-dark-blue);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button--dark {
+  background-color: var(--grayish-dark-blue);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.button--dark:hover {
+  transform: scale(1.1);
+}
+
+
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
@@ -143,7 +171,7 @@ img {
 /* SITE-HEADER  */
 .site-header {
   padding-top: 64px;
-  padding-bottom: 54px;
+  padding-bottom: 27px;
 }
 
 .site-header__container {
@@ -200,6 +228,10 @@ img {
   white-space: nowrap;
 }
 
+.sitenav__link--active {
+  color: var(--slightly-desaturated-cyan);
+}
+
 .sitenav__link:hover {
   color: var(--slightly-desaturated-cyan);
 }
@@ -208,6 +240,95 @@ img {
   opacity: 0.6;
 }
 
-.sitenav__link--active {
-  color: var(--slightly-desaturated-cyan);
+
+/* MAIN-CONTENT  */
+/* HERO  */
+.hero {
+  padding-top: 27px;
+  padding-bottom: 75px;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  min-height: 600px;
+  width: 1110px;
+  background-color: var(--slightly-desaturated-cyan);
+  background-image: url(../img/index-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.hero__inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 450px;
+  min-height: 357px;
+  background-color: var(--very-light-grey-bg);
+  padding-top: 55px;
+  padding-right: 55px;
+}
+
+.hero__text {
+  margin-bottom: 24px;
+  font-family: var(--title-font);
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 0;
+  min-width: 200px;
+}
+
+.hero__button span {
+  margin-right: auto;
+}
+
+.hero__button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero__bg {
+  min-width: 1110px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+/* RETINA-BG  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url(../img/index-hero-bg@2x.jpg);
+  }
 }
