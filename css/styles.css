@@ -112,6 +112,23 @@ img {
   outline-offset: 3px;
 }
 
+
+/* AUTOFILL  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: inherit;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 /* CONTAINER  */
 .container {
   max-width: 1150px;
@@ -148,6 +165,7 @@ img {
   letter-spacing: 2px;
   border: 1px solid var(--grayish-dark-blue);
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -766,6 +784,184 @@ img {
   height: 100%;
   object-fit: contain;
 }
+
+
+
+
+
+/* ................................................................................. */
+/* ..................................CONTACT........................................ */
+/* ................................................................................. */
+.section-contact {
+  padding-top: 67px;
+  padding-bottom: 60px;
+}
+
+.section-contact__content-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 1px solid var(--grayish-light-blue);
+  border-bottom: 1px solid var(--grayish-light-blue);
+}
+
+.section-contact__content-title {
+  margin: 0;
+  margin-right: 30px;
+  font-family: var(--title-font);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  white-space: nowrap;
+}
+
+.section-contact__content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 635px;
+}
+
+.section-contact__content-info-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+
+/* SECTION-FORM  */
+/* VALID-INVALID  */
+.form__input:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--slightly-desaturated-cyan);
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--bright-red-errors);
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid + .validation-error {
+  display: block;
+}
+
+.form__textarea:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--slightly-desaturated-cyan);
+}
+
+.form__textarea:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--bright-red-errors);
+}
+
+.form__textarea:not(:focus):not(:placeholder-shown):invalid + .validation-error {
+  display: block;
+}
+
+.validation-error {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  font-style: italic;
+  font-size: 10px;
+  line-height: normal;
+  font-weight: 700;
+  color: var(--bright-red-errors);
+}
+
+.section-form {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
+.form__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form__title {
+  margin: 0;
+  margin-right: 30px;
+  text-transform: capitalize;
+  font-family: var(--title-font);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  white-space: nowrap;
+}
+
+.form__area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 635px;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: rgba(51, 50, 61, 0.8);
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: rgba(51, 50, 61, 0.1);
+  color: var(--grayish-dark-blue);
+  font-size: 13px;
+  line-height: 30px;
+  border: 1px solid transparent;
+}
+
+.form__textarea-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  max-height: 300px;
+  border: 1px solid transparent;
+  padding: 9px 16px;
+  background-color: rgba(51, 50, 61, 0.1);
+  color: var(--grayish-dark-blue);
+  font-size: 13px;
+  line-height: 30px;
+  resize: vertical;
+}
+
+.form__button {
+  min-width: 200px;
+  padding: 17px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.form__button:hover {
+  background-color: transparent;
+  color: var(--grayish-dark-blue);
+  transform: scale(1);
+}
+
+
 
 
 
