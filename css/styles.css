@@ -232,7 +232,7 @@ img {
   text-align: left;
 }
 
-.slider__page-title--right {
+.slider__page-title--next {
   text-align: right;
   border-left: 1px solid var(--grayish-light-blue);
 }
@@ -258,7 +258,7 @@ img {
   line-height: 30px;
 }
 
-.slider__page-link--right::after {
+.slider__page-link--next::after {
   content: "Next project";
 }
 
@@ -648,10 +648,25 @@ img {
   max-width: 1110px;
   height: 500px;
   background-color:  var(--slightly-desaturated-cyan);
-  background-image: url(../img/portfolio-detail/manage-main.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+
+.details__container--portfolio {
+  background-image: url(../img/portfolio-detail/manage-main.jpg);
+}
+
+.details__container--bookmark {
+  background-image: url(../img/portfolio-detail/bookmark-main.jpg);
+}
+
+.details__container--insure {
+  background-image: url(../img/portfolio-detail/insure-main.jpg);
+}
+
+.details__container--fylo {
+  background-image: url(../img/portfolio-detail/fylo-main.jpg);
 }
 
 .section-detail {
@@ -754,5 +769,21 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .hero__container {
     background-image: url(../img/index-hero-bg@2x.jpg);
+  }
+
+  .details__container--portfolio {
+    background-image: url(../img/portfolio-detail/manage-main@2x.jpg);
+  }
+
+  .details__container--bookmark {
+    background-image: url(../img/portfolio-detail/bookmark-main@2x.jpg);
+  }
+
+  .details__container--insure {
+    background-image: url(../img/portfolio-detail/insure-main@2x.jpg);
+  }
+
+  .details__container--fylo {
+    background-image: url(../img/portfolio-detail/fylo-main@2x.jpg);
   }
 }
