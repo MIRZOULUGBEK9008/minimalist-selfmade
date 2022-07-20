@@ -596,13 +596,15 @@ img {
 }
 
 .portfolio__img-wrapper {
-  width: 540px;
+  min-width: 540px;
   height: 500px;
   background-color: var(--grayish-light-blue);
 }
 
 .portfolio__img {
   display: block;
+  min-width: 540px;
+  height: 500px;
   object-fit: contain;
 }
 
