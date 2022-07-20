@@ -653,7 +653,7 @@ img {
 .details__container {
   max-width: 1110px;
   height: 500px;
-  background-color:  var(--slightly-desaturated-cyan);
+  background-color:  var(--grayish-light-blue);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
