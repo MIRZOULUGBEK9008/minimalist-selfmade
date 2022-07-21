@@ -632,6 +632,8 @@ select:-webkit-autofill:focus {
   flex-shrink: 0;
   border-top: 1px solid var(--grayish-light-blue);
   border-bottom: 1px solid var(--grayish-light-blue);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .detail__content {
