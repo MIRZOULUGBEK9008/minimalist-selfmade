@@ -264,6 +264,7 @@ select:-webkit-autofill:focus {
   font-family: var(--title-font);
   font-size: 32px;
   line-height: 36px;
+  font-weight: 400;
   letter-spacing: -0.29px;
 }
 
